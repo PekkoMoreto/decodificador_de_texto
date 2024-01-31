@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #2695de;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+.conteudo {
+    padding: 5% 10%;
+    display: flex;
+    align-items: topline;
+    justify-content: space-between;
+}
+
+textarea {
+    text-decoration: none;
+    resize: none;
+    font-size: 100%;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    color: white;
+}
+
+.conteudo__principal__abaixo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    padding: 22px;
+    color: var(--cor-secundaria);
+}
+
+.botao__criptografar {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-primaria);
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-secundaria);
+}
+
+.botao__descriptografar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-primaria);
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: 'Inter', sans-serif;
+}
+
+.botao__criptografar:hover {
+    background-color: #35607a;
+}
+
+.botao__descriptografar:hover {
+    background-color: #f6f6f65e;
+}
+
+.botao__copiar:hover {
+    background-color: #35607a;
+}
+
+.retangulo__resultado {
+    position: relative;
+    padding: 9.9%;
+    left: 0px;
+    background-color: rgba(255, 255, 255);
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 10px;
+}
+
+.resultado {
+    position: absolute;
+    background-color: transparent;
+    color: var(--cor-primaria);
+    top: 10px;
+    right: 1px;
+    bottom: 100px;
+    left: 1px;
+    border: transparent;
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;   
+}
+
+.botao__copiar {
+    position: absolute;
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-primaria);
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px;
+    width: 90%;
+    top: 524px;
+    right: 13px;   
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: 'Inter', sans-serif;
+}
+
+.rodape {
+    padding: 4px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.portfolio {
+    color: var(--cor-primaria);
+    font-weight: bold;
+    text-decoration: none;
+}

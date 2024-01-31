@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+
+    </header>
+    <main class="conteudo">
+        <section class="conteudo__principal">
+            <textarea id="inputText" rows="25" cols="100" placeholder="Digite seu texto"></textarea>
+            <nav class="conteudo__principal__abaixo">
+                <i class="fa fa-exclamation-circle"> Apenas letras minúsculas e sem acento.</i>
+                <a class="botao__criptografar" href="result.html" onclick="encryptText()">Criptografar</a>
+                <a class="botao__descriptografar" href="result.html" onclick="decryptText()">Descriptografar</a>
+            </nav>
+        </section>
+        <div class="retangulo__resultado">
+            <textarea class="resultado" id="outputText" readonly></textarea>
+            <button class="botao__copiar" onclick="copyToClipboard()">Copiar</button>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por <a class="portfolio" href="https://portfolio-wine-three-26.vercel.app/">Pedro Moreto.</a>
+        </p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
